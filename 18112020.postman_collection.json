@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "24947b71-dc10-4428-9a8d-c0d87550a86b",
+		"name": "18112020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "generateToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8085/generateToken",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8085",
+					"path": [
+						"generateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getWeather",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiRGF0YSIsImlhdCI6MTYwNTcwMjg4NCwiZXhwIjoxNjA1NzEwMDg0LCJhdWQiOiIiLCJpc3MiOiJLcmF5b250Iiwic3ViIjoiYWJjQDEyMy5jb20ifQ.FqKuf2tJx25Eu9C3YdbMVlAQyQmq-9uijb8QRcLx5zLH8kX-CTpHInwhMKX07GUohEFR31a86_qancRF074VwA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8085/weather?q=hongkong",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8085",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hongkong"
+						},
+						{
+							"key": "Authorization",
+							"value": "bearer 1234567890",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
