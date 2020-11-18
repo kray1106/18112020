@@ -8,15 +8,15 @@
   C. Postman (https://www.postman.com/) or any other API client 
   
 # Instruction  
-  1. Clone the project and ensure that port 8085 is open on your machine
+  1. Clone the project and ensure that port 8085, 27017, 27018, and 27019 are open and available on your computer
   
   2. Go to the project folder and run this command "docker-compose up -d" and the system should start to build
   
-  3. After building you can see 2 services are up and running using the command "docker ps" (1 or nodejs and 1 for mongoDB)
+  3. After building you can see 2 services are up and running using the command "docker ps" (1 nodejs and 1 mongoDB)
   
   4. Import the API from the file 18112020.postman.collection.json into postman
   
-  5. Ther are 2 APIs in the collection
+  5. Ther are 2 API Docs in the collection
   
   
   # GET generateToken
