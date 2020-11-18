@@ -3,7 +3,7 @@
 let tokenGenerator = require("jsonwebtoken");
 
 // PRIVATE and PUBLIC key
-var privateKEY = `-----BEGIN RSA PRIVATE KEY-----
+let privateKEY = `-----BEGIN RSA PRIVATE KEY-----
 MIIBOgIBAAJBAJpsr2IItuEH4yjNOL+BKyVSgKBj5VX6KejI0fZzihgwvHQsJi+V
 yKhScHHCxSDVg4I/DWCfUGxV82dV0bMzxtsCAwEAAQJAWt5BhYpjMp+Vh9ja37V+
 UgPuNHMT7De8mYIyKrdqNzjrdLmUs48VFPhs9gMnDlQpAOwGcg/O6x8acIRCtLtj
@@ -13,23 +13,23 @@ yXaqLtggZTK1BQIfRX7yve5+9RFOAhswuy55y3k3UQPYPxUFD4NrZopSSQIhAL+7
 nzeuHWQ3LHCG6B+xzZlfuwXmP0v5j+CHA8SLtH9W
 -----END RSA PRIVATE KEY-----`;
 
-var publicKEY = `-----BEGIN RSA PUBLIC KEY-----
+let publicKEY = `-----BEGIN RSA PUBLIC KEY-----
 MEgCQQCabK9iCLbhB+MozTi/gSslUoCgY+VV+inoyNH2c4oYMLx0LCYvlcioUnBx
 wsUg1YOCPw1gn1BsVfNnVdGzM8bbAgMBAAE=
 -----END RSA PUBLIC KEY-----`;
 
-var i = "Krayont"; // Issuer
-var s = "abc@123.com"; // Subject
-var a = ""; // Audience
+let i = "Krayont"; // Issuer
+let s = "abc@123.com"; // Subject
+let a = ""; // Audience
 
 module.exports.generate = () => {
   // PAYLOAD
-  var payload = {
+  let payload = {
     data: "Data",
   };
 
   // SIGNING OPTIONS
-  var signOptions = {
+  let signOptions = {
     issuer: i,
     subject: s,
     audience: a,
@@ -41,7 +41,7 @@ module.exports.generate = () => {
 };
 
 module.exports.verifyToken = (token) => {
-  var verifyOptions = {
+  let verifyOptions = {
     issuer: i,
     subject: s,
     audience: a,

@@ -29,6 +29,8 @@
     "restify": "^8.5.1"
   },
   "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
     "jest": "^24.9.0"
   }
 }
